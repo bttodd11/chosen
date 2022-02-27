@@ -1,0 +1,8 @@
+.backgroundImage {
+background-image:url('./img/backgroundImage.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-position: left 10%;
+height: 100vh;
+width: 100vw;
+}
