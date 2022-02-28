@@ -2,7 +2,43 @@
 background-image:url('./img/backgroundImage.jpg');
 background-repeat:no-repeat;
 background-size:cover;
-background-position: left 10%;
+background-position: left 15%;
 height: 100vh;
-width: 100vw;
+width: 100%;
+position: relative;
+}
+.musicTitle {
+left: 0;
+position: absolute;
+font-family: 'Rajdhani', sans-serif;
+font-size: 40px;
+margin-left: 10px;
+}
+.artTitle {
+right: 0;
+position: absolute;
+font-family: 'Rajdhani', sans-serif;
+font-size: 40px;
+margin-right: 10px;
+}
+.clothTitle {
+bottom: 0;
+left: 0;
+position: absolute;
+font-family: 'Rajdhani', sans-serif;
+font-size: 40px;
+margin-left: 10px;
+}
+.socialSection {
+bottom: 0;
+right: 0;
+position: absolute;
+font-size: 40px;
+margin-right: 10px;
+margin-bottom: 40px
+}
+.socialIcon {
+  height: 35px;
+  width: 35px;
+  padding-left: 10px;
 }
