@@ -13,6 +13,8 @@ position: absolute;
 font-family: 'Rajdhani', sans-serif;
 font-size: 40px;
 margin-left: 10px;
+letter-spacing: 5px;
+opacity: .3;
 }
 .artTitle {
 right: 0;
@@ -20,6 +22,8 @@ position: absolute;
 font-family: 'Rajdhani', sans-serif;
 font-size: 40px;
 margin-right: 10px;
+letter-spacing: 5px;
+opacity: .3;
 }
 .clothTitle {
 bottom: 0;
@@ -28,6 +32,8 @@ position: absolute;
 font-family: 'Rajdhani', sans-serif;
 font-size: 40px;
 margin-left: 10px;
+letter-spacing: 5px;
+opacity: .3;
 }
 .socialSection {
 bottom: 0;
@@ -35,7 +41,8 @@ right: 0;
 position: absolute;
 font-size: 40px;
 margin-right: 10px;
-margin-bottom: 40px
+margin-bottom: 40px;
+opacity: .3;
 }
 .socialIcon {
   height: 35px;
