@@ -7,6 +7,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  <div className='backgroundImage'>
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
@@ -14,7 +15,8 @@ ReactDOM.render(
     <Route path="music" element={<Music />} />
     </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
+  </div>,
   document.getElementById('root')
 );
 
