@@ -1,39 +1,59 @@
 import "./Music.css";
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Container, Col, Row } from 'react-bootstrap';
+import playVideo from '../../../img/play.png';
 
 const Music = () => {
 
-    const youtubeFetch = () => {
-        let videos
+    let [videos, setVideos] = useState([]);
+    let playlistId = "UUwwrP7TPQmlkFHCWdCcYNpw";
+
+    const youtubeFetch = async (call) => {
+
         const http = new XMLHttpRequest();
-        const url = "https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=UCwwrP7TPQmlkFHCWdCcYNpw&key=AIzaSyBd26sX_fII61osu5b29kaOlB5odp9uMW4"
+        const url = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&playlistId=" + playlistId + "&key=AIzaSyBd26sX_fII61osu5b29kaOlB5odp9uMW4"
 
         http.open("GET", url);
         http.send();
 
-        http.onreadystatechange = (e) => {
-            if(http.readyState === XMLHttpRequest.DONE){
+        http.onload = function () {
+            call(http.responseText)
+        };
+    }
 
-                let status = http.status;
-                if(status === 0 || status >= 200 && status < 400){
-                    console.log(http.responseText)
-                }
-            }
-            
-        }
+    function mycallback(data) {
+        setVideos(JSON.parse(data).items)
+        console.log(videos)
     }
 
     useEffect(() => {
+        youtubeFetch(mycallback)
+    }, [videos.length])
 
-        console.log(youtubeFetch())
+    return (
+        <div id="musicSection">
+            <h1>Music</h1>
+            <Container>
+                <Row>
+                    {videos.length !== 0 ? (
+                        videos.map((vid) => (
+                            <Col md="4">
+                                <div id="videoSection">
+                                    <h5 className="videoTitle">{vid.snippet.title}</h5>
+                                    <div className="imageDiv">
+                                        <img className="playVideo" src={playVideo} />
+                                    {vid.snippet.thumbnails.maxres ? <img className="thumbnail" src={vid.snippet.thumbnails.maxres.url} /> : <img className="thumbnail" src={vid.snippet.thumbnails.default.url} />}
+                                    </div>
+                                </div>
+                            </Col>
+                        ))
+                    ) : null}
+                </Row>
+            </Container>
 
-    
-    })
-
-return(
-<h1>Music</h1>
-)
+        </div>
+    )
 }
 
 
