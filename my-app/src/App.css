@@ -49,9 +49,10 @@ font-size: 40px;
 margin-right: 10px;
 margin-bottom: 40px;
 opacity: .5;
+width: 140px;
 }
 .socialIcon {
-  height: 35px;
-  width: 35px;
-  padding-left: 10px;
+  height: 40px;
+  width: 40px;
+  margin-left: 25px;
 }
