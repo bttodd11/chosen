@@ -4,7 +4,8 @@ import './App.css';
 import instagram from './img/instagram.png'
 import twitter from './img/twitter.png'
 
-function App() {
+const App = () => {
+  
   return (
     <div className='backgroundImage'>
      <a className="musicTitleLink" href=''><Link to="/music"><h3 className="musicTitle">Music</h3></Link></a>

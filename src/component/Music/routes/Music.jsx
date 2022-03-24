@@ -2,7 +2,7 @@ import "./Music.css";
 import React from "react";
 import { useEffect, useState } from "react";
 import { Container, Col, Row } from 'react-bootstrap';
-import playVideo from '../../../img/play.png';
+
 
 const Music = () => {
 
