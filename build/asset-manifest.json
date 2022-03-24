@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/chosen/my-app/static/css/main.45daa6db.chunk.css",
+    "main.js": "/chosen/my-app/static/js/main.8d7a40ba.chunk.js",
+    "main.js.map": "/chosen/my-app/static/js/main.8d7a40ba.chunk.js.map",
+    "runtime-main.js": "/chosen/my-app/static/js/runtime-main.8f7efe70.js",
+    "runtime-main.js.map": "/chosen/my-app/static/js/runtime-main.8f7efe70.js.map",
+    "static/css/2.68a81a89.chunk.css": "/chosen/my-app/static/css/2.68a81a89.chunk.css",
+    "static/js/2.90b49d0d.chunk.js": "/chosen/my-app/static/js/2.90b49d0d.chunk.js",
+    "static/js/2.90b49d0d.chunk.js.map": "/chosen/my-app/static/js/2.90b49d0d.chunk.js.map",
+    "index.html": "/chosen/my-app/index.html",
+    "precache-manifest.e006437d1f127745f45d7a362fa1791a.js": "/chosen/my-app/precache-manifest.e006437d1f127745f45d7a362fa1791a.js",
+    "service-worker.js": "/chosen/my-app/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/chosen/my-app/static/css/2.68a81a89.chunk.css.map",
+    "static/css/main.45daa6db.chunk.css.map": "/chosen/my-app/static/css/main.45daa6db.chunk.css.map",
+    "static/media/App.css": "/chosen/my-app/static/media/backgroundImage.e0bbbe83.jpg",
+    "static/media/instagram.png": "/chosen/my-app/static/media/instagram.d8223b2e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f7efe70.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.90b49d0d.chunk.js",
+    "static/css/main.45daa6db.chunk.css",
+    "static/js/main.8d7a40ba.chunk.js"
+  ]
+}
