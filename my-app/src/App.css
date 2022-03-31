@@ -25,6 +25,9 @@ margin-top: 4%;
 .musicTitleLink :visited {
 color:black;
 }
+.musicTitleLink :link {
+  color: black;
+}
 .artTitle {
 right: 0;
 position: absolute;
