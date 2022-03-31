@@ -1,0 +1,12 @@
+#footerSection {
+    background-color: transparent;
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    padding-right: 2%;
+}
+
+.footerText {
+    color: white;
+    font-weight: bolder;
+}

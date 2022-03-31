@@ -1,11 +1,14 @@
 
 import { Outlet, Link } from 'react-router-dom';
 import './App.css';
+import Footer from './component/Footer/Footer';
 import instagram from './img/instagram.png'
 import twitter from './img/twitter.png'
 
 function App() {
   return (
+    <body>
+  <div>
     <div className='backgroundImage'>
      <a className="musicTitleLink" href=''><Link to="/music"><h3 className="musicTitle">Music</h3></Link></a>
       <h3 className="artTitle">Art</h3>
@@ -15,7 +18,10 @@ function App() {
       <a href=""><img title="navIcon" src={twitter} alt="my-img" class="socialIcon" /></a>
       <Outlet />
       </div>
+      <Footer />
     </div>
+  </div>
+  </body>
   );
 }
 

@@ -1,3 +1,8 @@
+@keyframes blink {
+  0% { color: white}
+  80% { color: #8d8d8d;}
+  100% { color: white }
+ }
 #musicSection {
   height: 100vh;
   width: 100%;
@@ -10,12 +15,6 @@
   height: 100vh;
   width: 100vw;
 }
-.videoSection {
-  margin: 0 auto;
-  margin-bottom: 5%;
-  border: 2px solid #8d8d8d;
-  margin-bottom: 30px;
-}
 h1 {
   margin-top: 0%;
   padding-top: 5%;
@@ -27,7 +26,9 @@ h1 {
   margin-bottom: 10% !important;
   text-align: center;
 }
-
+a {
+  text-decoration: none !important;
+}
 .imageDiv {
   position: absolute;
   bottom: 0;
@@ -37,7 +38,11 @@ h1 {
   margin-right: auto;
   width: 100%;
 }
-
+.videoSection {
+  margin: 0 auto;
+  padding-bottom: 15%;
+  width: 100%;
+}
 .preLoaderImage {
     background-position: center;
     height: 70%;
@@ -46,8 +51,26 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    z-index: -1;
 }
-
+.loadingText {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  animation: blink 1.2s infinite;
+  font-family: 'Inconsolata', monospace;
+}
+.homeText {
+  font-size: 20px;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 5px;
+  text-align: center;
+  text-decoration: none !important;
+  position: relative;
+  bottom: 0;
+}
   /* Landscape View */
   @media (min-width: 568px) and (max-width: 739px) {
 
@@ -63,12 +86,36 @@ h1 {
   .preLoaderImage{
       background-position: center;
       padding: 0%;
-      height: 100vh;
+      height: 80vh;
       width: 50vw;
       display: block;
       margin-left: auto;
       margin-right: auto;
   }
+  .loadingText {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    animation: blink 1.2s infinite;
+    font-family: 'Inconsolata', monospace;
+  }
+  #youtubeVideo {
+
+    object-fit: fill;
+  }
+
+  #youtubeVideo1 {
+
+    object-fit: fill;
+  }
+    
+
+  #youtubeVideo2 {
+
+    object-fit: fill;
+  }
+    
 
 }
 
