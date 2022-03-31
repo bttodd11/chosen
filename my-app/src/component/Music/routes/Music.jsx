@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import { Outlet, Link } from 'react-router-dom';
-import PreLoader from '../img/loader.png';
+import PreLoader from '../../../img/loader.png'
 import "./Music.css";
 import $ from 'jquery';
 
@@ -13,7 +13,6 @@ const Music = () => {
 
 
         document.querySelector("#youtubeVideo", "#youtubeVideo1", "#youtubeVide2").addEventListener( "load", function(e) {
-            console.log("Loaded")
             $('#preLoaderSection').hide()
             $('#musicSection').show(); 
         } );

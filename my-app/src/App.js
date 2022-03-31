@@ -4,10 +4,22 @@ import './App.css';
 import Footer from './component/Footer/Footer';
 import instagram from './img/instagram.png'
 import twitter from './img/twitter.png'
+import $ from 'jquery';
 
 function App() {
+
+  window.addEventListener('load', function () {
+    $('.preloadBG').hide()
+    $('.backgroundImage').show(); 
+
+
+  })
+
   return (
     <body>
+      <div className='preloadBG'>
+
+      </div>
   <div>
     <div className='backgroundImage'>
      <a className="musicTitleLink" href=''><Link to="/music"><h3 className="musicTitle">Music</h3></Link></a>

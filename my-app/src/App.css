@@ -1,3 +1,6 @@
+.preloadBG{
+  background-color: black;
+}
 .backgroundImage {
   background-image:url('./img/backgroundImage.jpg');
   background-repeat:no-repeat;
@@ -6,6 +9,8 @@
   height: 130vh;
   width: 100%;
   position: relative;
+  display: hide;
+  background-color: black;
   }
 .musicTitle {
 left: 0;
@@ -54,4 +59,16 @@ width: 140px;
   height: 40px;
   width: 40px;
   margin-left: 25px;
+}
+
+/* Desktop */
+@media (min-width: 992px){
+  .loadingText {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    animation: blink 1.2s infinite;
+    font-family: 'Inconsolata', monospace;
+  }
 }
