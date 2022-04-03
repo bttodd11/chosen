@@ -5,7 +5,7 @@ const Footer = () => {
 
   return(
     <div id="footerSection">
-    <p className="footerText"> Built in South Austin by <a href="https://www.bttodd.com/">B.Todd</a> </p>
+    <p className="footerText"> Built in South Austin by <a href="https://www.bttodd.com/" className="nameLink">B.Todd</a> </p>
     </div>
   )
 
