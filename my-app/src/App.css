@@ -9,50 +9,47 @@
   height: 130vh;
   width: 100%;
   position: relative;
-  display: hide;
   background-color: black;
   }
 .musicTitle {
 left: 0;
 position: absolute;
 font-family: 'Rajdhani', sans-serif;
-font-size: 40px;
+font-size: 25px;
 margin-left: 10px;
 letter-spacing: 5px;
-opacity: .7;
 margin-top: 4%;
 }
 .musicTitleLink :visited {
-color:black;
+color: white;
 }
 .musicTitleLink :link {
-  color: black;
+  color: white;
 }
 .artTitle {
 right: 0;
 position: absolute;
 font-family: 'Rajdhani', sans-serif;
-font-size: 40px;
+font-size: 25px;
 margin-right: 10px;
 letter-spacing: 5px;
-opacity: .7;
 margin-top: 4%;
+color: white;
 }
 .clothTitle {
 bottom: 35%;
 left: 0;
 position: absolute;
 font-family: 'Rajdhani', sans-serif;
-font-size: 40px;
+font-size: 25px;
 margin-left: 10px;
 letter-spacing: 5px;
-opacity: .7;
+color: white;
 }
 .socialSection {
 bottom: 33%;
 right: 0;
 position: absolute;
-font-size: 40px;
 margin-right: 10px;
 margin-bottom: 40px;
 opacity: .7;
