@@ -19,11 +19,12 @@
   margin-left: 10px;
   letter-spacing: 5px;
   margin-top: 4%;
-}
-.musicTitleLink :visited {
   color: white;
 }
-.musicTitleLink :link {
+.musicTitle :visited {
+  color: white;
+}
+.musicTitle :link {
   color: white;
 }
 .artTitle :visited {
@@ -35,7 +36,7 @@
 .clothTitle :visited {
   color: white;
 }
-..clothTitle :link {
+.clothTitle :link {
   color: white;
 }
 .artTitle {

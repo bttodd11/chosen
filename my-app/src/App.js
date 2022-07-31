@@ -19,7 +19,7 @@ function App() {
       </div>
       <div>
         <div className='backgroundImage'>
-          <a className="musicTitleLink" href=''><Link to="/music"><h3 className="musicTitle">Music</h3></Link></a>
+          <a href=''><Link to="/music"><p className="musicTitle">Music</p></Link></a>
           <a href='https://blessedbychosen.myshopify.com/'><h3 className="artTitle">Art</h3></a>
           <Link to="/cloth"><p className="clothTitle">Cloth</p></Link>
           <div className="socialSection">
