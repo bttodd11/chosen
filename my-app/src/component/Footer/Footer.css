@@ -13,10 +13,11 @@
 }
 
 .nameLink {
-    font-family: 'Yellowtail', cursive;
+    font-family: 'Philosopher', sans-serif;
     font-size: 20px;
     color: black;
-    letter-spacing: 3px
+    letter-spacing: 3px;
+    font-weight: bolder;
 }
 a :visited {
     color: black;

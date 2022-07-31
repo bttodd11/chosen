@@ -1,0 +1,50 @@
+#clothSection {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+#preLoaderSection {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.launchTitle {
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  line-height: 100vh;
+  font-family: "Inconsolata", monospace;
+  opacity: 0.5;
+}
+
+.homeText {
+  font-size: 20px;
+  color: #8d8d8d;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 5px;
+  text-align: center;
+  position: absolute;
+  margin-top: 3%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .launchTitle {
+    font-size: 60px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 100vh;
+    font-family: "Inconsolata", monospace;
+    opacity: 0.5;
+  }
+}

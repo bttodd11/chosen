@@ -4,7 +4,6 @@
   100% { color: white }
  }
 #musicSection {
-  height: 100vh;
   width: 100%;
   background-color: black;
   text-align: center;
@@ -15,15 +14,12 @@
   height: 100vh;
   width: 100vw;
 }
-h1 {
-  margin-top: 0%;
-  padding-top: 5%;
+.title {
   font-family: "Rajdhani", sans-serif;
-  font-size: 50px !important;
+  font-size: 80px !important;
   letter-spacing: 5px;
   color: #8d8d8d;
-  letter-spacing: 12px;
-  margin-bottom: 10% !important;
+  letter-spacing: 20px;
   text-align: center;
 }
 a {
@@ -61,24 +57,59 @@ a {
   animation: blink 1.2s infinite;
   font-family: 'Inconsolata', monospace;
 }
-.homeText {
+.iconSection {
+  width: 100%;
+  margin-bottom: 2%;
+}
+.socialIconMusic {
+  height: 100%;
+  width: 80px;
+  opacity: .5;
+  padding: 5px;
+}
+.mainImage {
+  width: 300px;
+}
+.mediaSection{
+  overflow: hidden;
+
+}
+.mediaTitle {
+  margin-top: 13%;
+  margin-bottom: 5%;
+  font-size: 50px;
+  color: #8d8d8d;
+  letter-spacing: 12px;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+}
+.homeText{
   font-size: 20px;
-  color: white;
+  color: #8d8d8d;
   font-family: 'Inconsolata', monospace;
   letter-spacing: 5px;
   text-align: center;
-  text-decoration: none !important;
   position: relative;
+  margin-top: 3%;
   bottom: 0;
 }
   /* Landscape View */
   @media (min-width: 568px) and (max-width: 739px) {
 
+
 }
 
   /* Tablet View */
 @media (min-width: 740px) and (max-width: 991px) {
-
+  .preLoaderImage{
+    background-position: center;
+    padding: 0%;
+    height: 80vh;
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
 /* Desktop */
@@ -101,21 +132,13 @@ a {
     font-family: 'Inconsolata', monospace;
   }
   #youtubeVideo {
-
     object-fit: fill;
   }
-
   #youtubeVideo1 {
-
     object-fit: fill;
   }
-    
-
   #youtubeVideo2 {
-
     object-fit: fill;
   }
-    
-
 }
 
