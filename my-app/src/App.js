@@ -20,7 +20,7 @@ function App() {
       <div>
         <div className='backgroundImage'>
           <a className="musicTitleLink" href=''><Link to="/music"><h3 className="musicTitle">Music</h3></Link></a>
-          <h3 className="artTitle"><a href='https://blessedbychosen.myshopify.com/'>Art</a></h3>
+          <a href='https://blessedbychosen.myshopify.com/'><h3 className="artTitle">Art</h3></a>
           <Link to="/cloth"><p className="clothTitle">Cloth</p></Link>
           <div className="socialSection">
             <a href="https://www.instagram.com/ericthechosen/"><img title="navIcon" src={instagram} alt="my-img" class="socialIcon" /></a>
