@@ -28,13 +28,12 @@ const Music = () => {
                 <p className="loadingText">Loading...</p>
             </div>
             <div id="musicSection">
-                <p className="title">Chosen</p>
+                <img className="mainImage" src={chosenImage}></img>
                 <div className="iconSection">
                     <a href="https://tidal.com/browse/artist/10245007"><img title="navIcon" src={tidal} alt="my-img" class="socialIconMusic" /></a>
                     <a href="https://music.apple.com/us/artist/ericthechosen/1342828361"><img title="navIcon" src={apple} alt="my-img" class="socialIconMusic" /></a>
                     <a href="https://open.spotify.com/artist/0vTq8DS8a3bRmf0U1hEuCa?si=cYGGpX2HQ1eovfjZlWF6VQ"><img title="navIcon" src={spotify} alt="my-img" class="socialIconMusic" /></a>
                 </div>
-                <img className="mainImage" src={chosenImage}></img>
                 <div className="mediaSection">
                     <p className="mediaTitle">Media</p>
                     <Container fluid>
