@@ -13,7 +13,7 @@ const Music = () => {
 
     useEffect(() => {
 
-        document.querySelector("#youtubeVideo", "#youtubeVideo1", "#youtubeVide2").addEventListener("load", function (e) {
+        document.querySelector("#youtubeVideo", "#youtubeVideo1", "#youtubeVide2", "#preLoaderImage").addEventListener("load", function (e) {
             $('#preLoaderSection').hide()
             $('#musicSection').show();
         });
@@ -23,7 +23,7 @@ const Music = () => {
     return (
         <div>
             <div id="preLoaderSection">
-                <img className="preLoaderImage" alt="preLoaderImage" src={PreLoader}></img>
+                <img id="preLoaderImage" alt="preLoaderImage" src={PreLoader}></img>
                 <p className="loadingText">Loading...</p>
             </div>
             <div id="musicSection">

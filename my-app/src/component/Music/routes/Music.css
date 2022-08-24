@@ -39,7 +39,7 @@ a {
   padding-bottom: 15%;
   width: 100%;
 }
-.preLoaderImage {
+#preLoaderImage {
     background-position: center;
     height: 70%;
     padding-top: 40%;
@@ -102,7 +102,7 @@ a {
 
   /* Tablet View */
 @media (min-width: 740px) and (max-width: 991px) {
-  .preLoaderImage{
+  #preLoaderImage{
     background-position: center;
     padding: 0%;
     height: 80vh;
@@ -115,7 +115,7 @@ a {
 
 /* Desktop */
 @media (min-width: 992px){
-  .preLoaderImage{
+  #preLoaderImage{
       background-position: center;
       padding: 0%;
       height: 80vh;
