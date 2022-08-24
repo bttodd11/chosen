@@ -1,6 +1,6 @@
-import { React, useState, useEffect } from "react";
+import { React, useEffect } from "react";
 import { Container, Col, Row } from 'react-bootstrap';
-import { Outlet, Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import PreLoader from '../../../img/loader.png'
 import tidal from '../../../img/tidal.png';
 import spotify from '../../../img/spotify.png';
@@ -10,7 +10,6 @@ import "./Music.css";
 import $ from 'jquery';
 
 const Music = () => {
-    const [preLoader, removePreLoader] = useState(true);
 
     useEffect(() => {
 
@@ -24,11 +23,11 @@ const Music = () => {
     return (
         <div>
             <div id="preLoaderSection">
-                <img className="preLoaderImage" src={PreLoader}></img>
+                <img className="preLoaderImage" alt="preLoaderImage" src={PreLoader}></img>
                 <p className="loadingText">Loading...</p>
             </div>
             <div id="musicSection">
-                <img className="mainImage" src={chosenImage}></img>
+                <img className="mainImage" alt="mainImage" src={chosenImage}></img>
                 <div className="iconSection">
                     <a href="https://tidal.com/browse/artist/10245007"><img title="navIcon" src={tidal} alt="my-img" class="socialIconMusic" /></a>
                     <a href="https://music.apple.com/us/artist/ericthechosen/1342828361"><img title="navIcon" src={apple} alt="my-img" class="socialIconMusic" /></a>

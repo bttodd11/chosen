@@ -1,13 +1,11 @@
-import {React, useState, useEffect} from "react";
+import {React, useEffect} from "react";
 import PreLoader from '../../../img/loader.png'
-import { Outlet, Link } from 'react-router-dom';
+import  { Link } from 'react-router-dom';
 import $ from 'jquery'
 import "./Cloth.css";
 
 
 const Cloth = () => {
-  const [preLoader, removePreLoader] = useState(true);
-
 
   useEffect(() => {
 
@@ -22,7 +20,7 @@ const Cloth = () => {
   return (
     <div>
       <div id="preLoaderSection">
-        <img className="preLoaderImage" src={PreLoader}></img>
+        <img className="preLoaderImage" alt="preLoaderImage" src={PreLoader}></img>
         <p className="loadingText">Loading...</p>
       </div>
       <div id="clothSection">
